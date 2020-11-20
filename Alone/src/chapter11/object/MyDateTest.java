@@ -19,6 +19,11 @@ class MyDate {
 		}
 		return false;
 	}
+
+	@Override
+	public int hashCode() {
+		return day * 10 + month * 101 + year * 102;
+	}
 }
 
 public class MyDateTest {
@@ -27,5 +32,8 @@ public class MyDateTest {
 		MyDate date2 = new MyDate(9, 18, 2004);
 
 		System.out.println(date1.equals(date2));
+
+		System.out.println(date1.hashCode());
+		System.out.println(date2.hashCode());
 	}
 }
