@@ -8,7 +8,8 @@ public class ExceptionHandling1 {
 		try {
 			FileInputStream fis = new FileInputStream("a.txt");
 		} catch(FileNotFoundException e) {
-			e.printStackTrace();
+			System.out.println(e);	//예외 클래스의 toString() 메서드 호출
 		}
+		System.out.println("여기도 수행됩니다.");	//정상 출력
 	}
 }
