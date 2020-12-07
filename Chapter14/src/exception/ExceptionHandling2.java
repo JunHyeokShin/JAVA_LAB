@@ -18,7 +18,7 @@ public class ExceptionHandling2 {
 				try {
 					fis.close();	//파일 입력 스트림 닫기
 				} catch(IOException e) {
-					// TODO Auto-generated catch back
+					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
